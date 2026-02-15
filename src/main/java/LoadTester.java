@@ -122,7 +122,6 @@ public class LoadTester {
             if (!responseTimes.isEmpty()) {
                 responseTimes.sort(Long::compare);
                 System.out.println("Медианное время: " + responseTimes.get(responseTimes.size() / 2) + " мс");
-                System.out.println("95-й перцентиль: " + responseTimes.get((int)(responseTimes.size() * 0.95)) + " мс");
                 System.out.println("Максимальное время: " + responseTimes.get(responseTimes.size() - 1) + " мс");
                 System.out.println("Минимальное время: " + responseTimes.get(0) + " мс");
             }
